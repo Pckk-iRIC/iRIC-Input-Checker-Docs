@@ -1,17 +1,17 @@
-# iRIC Input Checker Documentation
+# iRIC Input Checker ドキュメント
 
-This repository publishes the generated user documentation for iRIC Input Checker.
+このリポジトリは、iRIC Input Checker の生成済みユーザードキュメントを公開するためのリポジトリです。
 
-## Source Code
+## ソースコード
 
-The source code and release assets are maintained in the main repository:
+ソースコードとリリース成果物は、以下のメインリポジトリで管理しています。
 
 https://github.com/Pckk-iRIC/iRIC-Input-Checker
 
-## Contact
+## 問い合わせ
 
-For questions, bug reports, or requests, please use the Issues page in the main repository:
+質問、不具合報告、要望は、メインリポジトリの Issues から連絡してください。
 
 https://github.com/Pckk-iRIC/iRIC-Input-Checker/issues
 
-This contact section is intentionally kept small so it can be updated easily as the support process changes.
+問い合わせ先の運用が変わった場合に修正しやすいよう、このセクションは最小限の内容にしています。
