@@ -4,13 +4,13 @@
 
 ## 公開ページ
 
-https://pckk-iric.github.io/iRIC-Input-Checker-Docs/
+https://pckk-iric.github.io/iRIC-Input-Checker-Public/
 
 ## ダウンロード
 
-実行ファイル一式は、以下のページからバージョンごとにダウンロードできます。
+実行ファイル一式は、公開用リポジトリの Releases からバージョンごとにダウンロードできます。
 
-https://pckk-iric.github.io/iRIC-Input-Checker-Docs/user/downloads/
+https://github.com/Pckk-iRIC/iRIC-Input-Checker-Public/releases
 
 ## ソースコード
 
