@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>トラブルシュート - iRIC Input Checker ユーザードキュメント</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c8";
+        var mkdocs_page_input_path = "user\\troubleshooting.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> iRIC Input Checker ユーザードキュメント
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">はじめに</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ユーザーガイド</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/">クイックスタート</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">インストール</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gui-check/">確認モード（Check）</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gui-compare/">比較モード（Compare）</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../reports/">レポートの見方</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">トラブルシュート</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">起動に失敗する場合</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">入力エラーが表示される場合</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">保存先エラーが表示される場合</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pdf">PDF レポートが生成されない場合</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#html">HTML レポートで画像や詳細確認が開けない場合</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#viewer">詳細確認 viewer が重い場合</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_5">文字化けが発生する場合</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">iRIC Input Checker ユーザードキュメント</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">ユーザーガイド</li>
+      <li class="breadcrumb-item active">トラブルシュート</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">トラブルシュート<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">起動に失敗する場合<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>iRIC 実行環境が導入済みであることを確認してください。</li>
+<li>配布物を別フォルダへ再展開し、再実行してください。</li>
+</ul>
+<h2 id="_3">入力エラーが表示される場合<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>入力に <code>.ipro</code> または <code>project.xml</code> を指定していることを確認してください。</li>
+<li><code>project.xml</code> を指定する場合、同じフォルダ内にプロジェクトファイル一式が存在することを確認してください。</li>
+</ul>
+<h2 id="_4">保存先エラーが表示される場合<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul>
+<li>保存先フォルダに入力プロジェクト配下を指定することはできません。</li>
+<li>入力ディレクトリとは別の出力ルートを指定してください。</li>
+</ul>
+<h2 id="pdf">PDF レポートが生成されない場合<a class="headerlink" href="#pdf" title="Permanent link">&para;</a></h2>
+<ul>
+<li>HTML レポートが生成されているかを確認してください。</li>
+<li>画像出力件数を減らして再実行してください。</li>
+</ul>
+<h2 id="html">HTML レポートで画像や詳細確認が開けない場合<a class="headerlink" href="#html" title="Permanent link">&para;</a></h2>
+<ul>
+<li>GUI の <code>簡易レポート（HTML）を開く</code> から開いているかを確認してください。</li>
+<li>出力フォルダ内の <code>web/report/index.html</code>, <code>web/detail/index.html</code>, <code>plots/</code>, <code>data/</code> をまとめて保持しているかを確認してください。</li>
+<li><code>report</code> または <code>detail</code> の HTML だけを単独で別フォルダへ移動すると、画像や詳細確認へのリンクが切れることがあります。</li>
+</ul>
+<h2 id="viewer">詳細確認 viewer が重い場合<a class="headerlink" href="#viewer" title="Permanent link">&para;</a></h2>
+<ul>
+<li>まず簡易レポートで概要を確認し、必要な属性だけ詳細確認してください。</li>
+<li>比較モードでは、差分図は初期状態で閉じています。必要な項目だけ <code>差分図を表示</code> を開いてください。</li>
+<li>他のアプリケーションがメモリを多く使用している場合は、不要なアプリを閉じてから再度開いてください。</li>
+</ul>
+<h2 id="_5">文字化けが発生する場合<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li>元データの文字コードを確認してください。</li>
+<li>表示側アプリケーションの文字コード設定を確認してください。</li>
+</ul>
+<hr />
+<p><a href="../reports/">前へ: レポートの見方</a> | <a href="../faq/">次へ: FAQ</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../reports/" class="btn btn-neutral float-left" title="レポートの見方"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../faq/" class="btn btn-neutral float-right" title="FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../reports/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../faq/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>FAQ - iRIC Input Checker ユーザードキュメント</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "FAQ";
+        var mkdocs_page_input_path = "user\\faq.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> iRIC Input Checker ユーザードキュメント
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">はじめに</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ユーザーガイド</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/">クイックスタート</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">インストール</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gui-check/">確認モード（Check）</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gui-compare/">比較モード（Compare）</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../reports/">レポートの見方</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">トラブルシュート</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">FAQ</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#q-ipro-projectxml">Q. .ipro と project.xml のどちらを使うべきですか？</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#q">Q. 出力先は入力フォルダの中でもよいですか？</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#q_1">Q. 比較で何が見られますか？</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#q_2">Q. レポートはどれを使うべきですか？</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#q-html-viewer">Q. HTML レポートと詳細確認 viewer の使い分けは？</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#q-html">Q. HTML レポートをエクスプローラーから直接開いてもよいですか？</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#q_3">Q. 比較レポートの差分図が最初は出ていないのは不具合ですか？</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">iRIC Input Checker ユーザードキュメント</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">ユーザーガイド</li>
+      <li class="breadcrumb-item active">FAQ</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h1>
+<h2 id="q-ipro-projectxml">Q. <code>.ipro</code> と <code>project.xml</code> のどちらを使うべきですか？<a class="headerlink" href="#q-ipro-projectxml" title="Permanent link">&para;</a></h2>
+<p>A. どちらでも実行できます。運用で管理しやすい方を使ってください。</p>
+<h2 id="q">Q. 出力先は入力フォルダの中でもよいですか？<a class="headerlink" href="#q" title="Permanent link">&para;</a></h2>
+<p>A. いいえ。入力プロジェクト配下は指定できません。</p>
+<h2 id="q_1">Q. 比較で何が見られますか？<a class="headerlink" href="#q_1" title="Permanent link">&para;</a></h2>
+<p>A. 計算条件差分、格子属性差分、Functional差分（対応範囲内）を確認できます。</p>
+<h2 id="q_2">Q. レポートはどれを使うべきですか？<a class="headerlink" href="#q_2" title="Permanent link">&para;</a></h2>
+<p>A. 日常確認は HTML、提出用途は PDF を推奨します。</p>
+<h2 id="q-html-viewer">Q. HTML レポートと詳細確認 viewer の使い分けは？<a class="headerlink" href="#q-html-viewer" title="Permanent link">&para;</a></h2>
+<p>A. まず簡易レポートで全体像を確認し、格子形状や格子属性を拡大確認したい場合だけ詳細確認 viewer を開いてください。</p>
+<h2 id="q-html">Q. HTML レポートをエクスプローラーから直接開いてもよいですか？<a class="headerlink" href="#q-html" title="Permanent link">&para;</a></h2>
+<p>A. <code>web</code> 出力一式が揃っていれば確認できますが、GUI から開く方が確実です。GUI はローカルサーバ経由で report / detail / 画像参照をまとめて扱います。</p>
+<h2 id="q_3">Q. 比較レポートの差分図が最初は出ていないのは不具合ですか？<a class="headerlink" href="#q_3" title="Permanent link">&para;</a></h2>
+<p>A. 不具合ではありません。比較レポートは見やすさのため、初期表示を <code>基準 / 比較</code> の 2 列にしています。差分図がある項目だけ <code>差分図を表示</code> で展開できます。</p>
+<hr />
+<p><a href="../troubleshooting/">前へ: トラブルシュート</a> | <a href="../../">先頭へ: はじめに</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../troubleshooting/" class="btn btn-neutral float-left" title="トラブルシュート"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../troubleshooting/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

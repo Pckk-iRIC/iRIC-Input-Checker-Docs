@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>クイックスタート - iRIC Input Checker ユーザードキュメント</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u30af\u30a4\u30c3\u30af\u30b9\u30bf\u30fc\u30c8";
+        var mkdocs_page_input_path = "user\\getting-started.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> iRIC Input Checker ユーザードキュメント
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">はじめに</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ユーザーガイド</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">クイックスタート</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1">1. 起動</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2">2. 最小手順（確認モード）</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3">3. 最小手順（比較モード）</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4">4. 出力確認</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">補足</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">画面例</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">インストール</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gui-check/">確認モード（Check）</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gui-compare/">比較モード（Compare）</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../reports/">レポートの見方</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../troubleshooting/">トラブルシュート</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../faq/">FAQ</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">iRIC Input Checker ユーザードキュメント</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">ユーザーガイド</li>
+      <li class="breadcrumb-item active">クイックスタート</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">クイックスタート<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="1">1. 起動<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<ol>
+<li>配布物を展開します。</li>
+<li>実行ファイル（<code>iRIC_Input_Checker_vX.Y.Z.exe</code>）を起動します。</li>
+</ol>
+<h2 id="2">2. 最小手順（確認モード）<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<ol>
+<li>実行モードで <code>確認（1ケース）</code> を選択します。</li>
+<li><code>基準ケース</code> に <code>.ipro</code> または <code>project.xml</code> を指定します。</li>
+<li><code>保存先フォルダ</code> を指定します。</li>
+<li><code>簡易レポート（HTML形式）</code> と <code>簡易レポート（PDF形式）</code> を有効化します。</li>
+<li><code>実行</code> を押します。</li>
+</ol>
+<h2 id="3">3. 最小手順（比較モード）<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<ol>
+<li>実行モードで <code>比較（2ケース）</code> を選択します。</li>
+<li><code>基準ケース</code> と <code>比較ケース</code> を指定します。</li>
+<li><code>保存先フォルダ</code> を指定します。</li>
+<li>レポート出力設定を確認し、<code>実行</code> を押します。</li>
+</ol>
+<h2 id="4">4. 出力確認<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<ul>
+<li>実行完了ダイアログで <code>レポートを開く</code> または <code>出力フォルダを開く</code> を選択します。</li>
+</ul>
+<h2 id="_2">補足<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>project.xml</code> を指定する場合は、同じフォルダ内に必要なプロジェクトファイル一式が存在することを確認してください。</li>
+</ul>
+<h2 id="_3">画面例<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>確認モードのメイン画面</li>
+<li>比較モードのメイン画面</li>
+</ul>
+<p><img alt="確認モードのメイン画面" src="../../assets/images/user/gui-main-check.png" /></p>
+<p><img alt="比較モードのメイン画面" src="../../assets/images/user/gui-main-compare.png" /></p>
+<hr />
+<p><a href="../../">前へ: はじめに</a> | <a href="../installation/">次へ: インストール</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../.." class="btn btn-neutral float-left" title="はじめに"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../installation/" class="btn btn-neutral float-right" title="インストール">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../installation/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
