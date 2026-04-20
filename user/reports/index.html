@@ -55,27 +55,23 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">レポートの見方</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#html">HTML レポート</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#html_1">HTML 利用時の注意</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">使い分け</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#_2">開き方</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">確認の流れ</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#html">HTML レポート</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#viewer">詳細確認 viewer</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">確認モード</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">比較モード</a>
     </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#pdf">PDF レポート</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_3">画面例</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#viewer">詳細確認 viewer の画面例</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#viewer_1">確認モードの詳細確認 viewer</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#viewer_2">比較モードの詳細確認 viewer</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#_4">比較レポートの差分図展開例</a>
-    </li>
-        </ul>
+    <li class="toctree-l2"><a class="reference internal" href="#html_1">HTML 利用時の注意</a>
     </li>
     </ul>
                   </li>
@@ -109,47 +105,53 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="_1">レポートの見方<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="html">HTML レポート<a class="headerlink" href="#html" title="Permanent link">&para;</a></h2>
+<h2 id="_2">使い分け<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul>
-<li>ブラウザでの閲覧に適したレポートです。</li>
-<li>確認モードでは入力条件の可視化、比較モードでは差分可視化を中心に表示します。</li>
-<li>画面操作による確認作業に適しています。</li>
-<li>HTML 出力には <code>簡易レポート</code> と <code>詳細確認 viewer</code> が含まれます。</li>
-<li>GUI では <code>簡易レポート（HTML）を開く</code> から report を開き、必要に応じて report 内のボタンから detail へ遷移します。</li>
+<li>HTML レポート: 実行直後の確認、画面上での差分確認、図の拡大確認に使います。</li>
+<li>詳細確認 viewer: 格子形状や格子属性を詳しく確認したい場合に使います。</li>
+<li>PDF レポート: 結果を保存、共有、報告する場合に使います。</li>
 </ul>
-<h3 id="html_1">HTML 利用時の注意<a class="headerlink" href="#html_1" title="Permanent link">&para;</a></h3>
+<p>通常は、まず HTML レポートで全体を確認し、必要な項目だけ詳細確認 viewer や PDF で確認します。</p>
+<h2 id="_3">確認の流れ<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ol>
+<li>実行完了後、GUI の <code>簡易レポート（HTML）を開く</code> から HTML レポートを開きます。</li>
+<li>レポート上部の概要で、入力ケース、出力結果、警告の有無を確認します。</li>
+<li>計算条件、格子属性、Functional グラフを確認します。</li>
+<li>格子形状や格子属性を拡大したい場合は、HTML レポート内の <code>詳細確認を開く</code> または <code>詳細比較を開く</code> から viewer を開きます。</li>
+<li>共有や保存が必要な場合は PDF レポートを確認します。</li>
+</ol>
+<h2 id="html">HTML レポート<a class="headerlink" href="#html" title="Permanent link">&para;</a></h2>
+<p>HTML レポートは、ブラウザで確認するための対話的なレポートです。確認モードでは入力条件の一覧と可視化結果、比較モードでは基準ケースと比較ケースの差分を中心に表示します。</p>
+<p><img alt="HTMLレポート表示例" src="../../assets/images/user/screen-html-report.png" /></p>
+<p>主な確認箇所:</p>
+<ul>
+<li>概要: 入力ケース、選択された CGNS、生成ファイルを確認します。</li>
+<li>計算条件: 入力条件の値や Functional データを確認します。</li>
+<li>格子属性の分布図: ノード・セルなどの属性値を色分布で確認します。</li>
+<li>詳細確認へのリンク: 格子形状や属性を拡大表示する viewer へ移動します。</li>
+</ul>
+<h2 id="viewer">詳細確認 viewer<a class="headerlink" href="#viewer" title="Permanent link">&para;</a></h2>
+<p>詳細確認 viewer は、HTML レポートだけでは見づらい格子形状や格子属性を確認する画面です。属性を切り替えながら、格子線、値の分布、hover 情報を確認できます。</p>
+<h3 id="_4">確認モード<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><img alt="確認モードの詳細確認 viewer" src="../../assets/images/user/screen-check-detail.png" /></p>
+<p>確認モードでは、1つのケースの格子と格子属性を確認します。格子属性の分布が想定と合っているか、入力値の抜けや偏りがないかを確認する用途に向いています。</p>
+<h3 id="_5">比較モード<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>比較モードでは、基準ケースと比較ケースを並べて確認します。条件変更によって格子属性や分布がどう変わったかを確認する用途に向いています。</p>
+<p><img alt="比較モードの詳細確認 viewer" src="../../assets/images/user/screen-compare-detail.png" /></p>
+<p>比較レポートでは、差分図がある項目だけ <code>差分図を表示</code> で 3 列目を展開できます。初期表示は <code>基準 / 比較</code> の 2 列です。</p>
+<p><img alt="比較レポートの差分図展開例" src="../../assets/images/user/screen-compare-diff-expanded.png" /></p>
+<h2 id="pdf">PDF レポート<a class="headerlink" href="#pdf" title="Permanent link">&para;</a></h2>
+<p>PDF レポートは、確認結果を保存・共有するための固定レイアウトのレポートです。画面操作はできませんが、報告資料や記録として扱いやすい形式です。</p>
+<p><img alt="PDFレポート表示例" src="../../assets/images/user/screen-pdf-report.png" /></p>
+<p>画像点数が多い場合は、PDF の生成に時間がかかることがあります。</p>
+<h2 id="html_1">HTML 利用時の注意<a class="headerlink" href="#html_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>HTML は <code>report</code> と <code>detail</code> をまとめた <code>web</code> 出力として生成されます。</li>
-<li>詳細確認 viewer は格子形状や格子属性を拡大して確認するための画面です。通常確認は簡易レポート、詳細確認が必要な場合だけ viewer を使う運用を推奨します。</li>
-<li>格子数や属性数が多いケースでは、詳細確認 viewer の表示や切替が重くなることがあります。</li>
-<li>比較モードでは、差分図がある項目だけ <code>差分図を表示</code> ボタンで 3 列目を展開できます。初期表示は <code>基準 / 比較</code> の 2 列です。</li>
-</ul>
-<h3 id="_2">開き方<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<ul>
 <li>GUI から開く場合は、内部でローカルサーバを起動して表示します。</li>
 <li>出力フォルダを直接参照する場合は、<code>web/report/index.html</code> を起点にしてください。</li>
 <li><code>plots</code> や <code>detail</code> は report と同じ出力束として扱うため、HTML ファイル単体だけを別フォルダへ移動しないでください。</li>
+<li>格子数や属性数が多いケースでは、詳細確認 viewer の表示や切替が重くなることがあります。</li>
 </ul>
-<h2 id="pdf">PDF レポート<a class="headerlink" href="#pdf" title="Permanent link">&para;</a></h2>
-<ul>
-<li>報告・共有用途を想定した固定レイアウトのレポートです。</li>
-<li>保存性を重視した出力形式です。</li>
-<li>画像点数が多い場合は、出力完了まで時間を要することがあります。</li>
-</ul>
-<h2 id="_3">画面例<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<ul>
-<li>HTMLレポート表示例</li>
-<li>PDFレポート表示例</li>
-</ul>
-<p><img alt="HTMLレポート表示例" src="../../assets/images/user/screen-html-report.png" /></p>
-<p><img alt="PDFレポート表示例" src="../../assets/images/user/screen-pdf-report.png" /></p>
-<h2 id="viewer">詳細確認 viewer の画面例<a class="headerlink" href="#viewer" title="Permanent link">&para;</a></h2>
-<h3 id="viewer_1">確認モードの詳細確認 viewer<a class="headerlink" href="#viewer_1" title="Permanent link">&para;</a></h3>
-<p><img alt="確認モードの詳細確認 viewer" src="../../assets/images/user/screen-check-detail.png" /></p>
-<h3 id="viewer_2">比較モードの詳細確認 viewer<a class="headerlink" href="#viewer_2" title="Permanent link">&para;</a></h3>
-<p><img alt="比較モードの詳細確認 viewer" src="../../assets/images/user/screen-compare-detail.png" /></p>
-<h3 id="_4">比較レポートの差分図展開例<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p><img alt="比較レポートの差分図展開例" src="../../assets/images/user/screen-compare-diff-expanded.png" /></p>
 <hr />
 <p><a href="../gui-compare/">前へ: 比較モード（Compare）</a> | <a href="../troubleshooting/">次へ: トラブルシュート</a></p>
               
