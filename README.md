@@ -10,7 +10,7 @@ https://pckk-iric.github.io/iRIC-Input-Checker-Docs/
 
 実行ファイル一式は、以下のページからバージョンごとにダウンロードできます。
 
-https://pckk-iric.github.io/iRIC-Input-Checker-Docs/downloads/
+https://pckk-iric.github.io/iRIC-Input-Checker-Docs/user/downloads/
 
 ## ソースコード
 
